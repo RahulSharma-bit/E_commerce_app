@@ -1,0 +1,46 @@
+name: r_shop_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ^3.10.1
+
+#----------------------- Packages -----------------------------------------#
+dependencies:
+  flutter:
+    sdk: flutter
+
+# ------------------------------- Utility Packages -------------------------
+  intl: ^0.20.2
+  http: ^1.6.0
+  url_launcher: ^6.3.2
+  logger: ^2.6.2
+  flutter_native_splash: ^2.4.7
+  smooth_page_indicator: ^2.0.1
+
+# Get Storage
+  get: ^4.7.3
+  get_storage: ^2.1.1
+
+#  Icons
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.8
+  lottie: ^3.3.2
+# -------------------------Packages End ------------------------------------#
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+# ========================== LOCAL ASSETS ====================================#
+  assets:
+    - assets/logos/
+    - assets/icons/
+    - assets/images/onboarding_images/
+    - assets/images/onboarding_lottie_animation/
+    - assets/images/email_verify_animation/
+    - assets/images/forget_pass_email_sent/
