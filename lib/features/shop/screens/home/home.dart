@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:r_shop_app/features/shop/screens/home/widgets/home_app_bar.dart';
+import 'package:r_shop_app/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:r_shop_app/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:r_shop_app/utils/constants/image_strings.dart';
 
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
+import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class HomePage extends StatelessWidget {
@@ -26,8 +30,27 @@ class HomePage extends StatelessWidget {
                   const SizedBox(height: RSizes.spaceBtwSections),
 
                   /// -- Categories
+                  const Padding(
+                    padding: EdgeInsets.only(left: RSizes.defaultSpace),
+                    child: Column(
+                      children: [
+                        /// -- Heading
+                        RSectionHeading(title: 'Popular Categories', showActionButton: false, textColor: Colors.white),
+                        SizedBox(height: RSizes.spaceBtwItems),
+
+                        /// -- Categories
+                        RFormCategories(),
+                      ],
+                    ),
+                  ),
                 ],
               ),
+            ),
+
+            /// -- Body
+            Padding(
+              padding: const EdgeInsets.all(RSizes.defaultSpace),
+              child: RPromoSlider(banners: [RAppImages.promoBanner_1, RAppImages.promoBanner_2, RAppImages.promoBanner_3]),
             ),
           ],
         ),

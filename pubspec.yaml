@@ -15,6 +15,7 @@ dependencies:
   intl: ^0.20.2
   http: ^1.6.0
   url_launcher: ^6.3.2
+  carousel_slider: ^5.1.2
   logger: ^2.6.2
   flutter_native_splash: ^2.4.7
   smooth_page_indicator: ^2.0.1
@@ -44,3 +45,5 @@ flutter:
     - assets/images/onboarding_lottie_animation/
     - assets/images/email_verify_animation/
     - assets/images/forget_pass_email_sent/
+    - assets/icons/categories/
+    - assets/images/banners/
