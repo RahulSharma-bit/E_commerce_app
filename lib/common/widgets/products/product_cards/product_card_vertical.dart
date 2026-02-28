@@ -31,6 +31,7 @@ class RProductCardVertical extends StatelessWidget {
         ),
 
         child: Column(
+          // to align the text at left
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             /// -- Thumbnail , Wishlist Button, Discount Tag
