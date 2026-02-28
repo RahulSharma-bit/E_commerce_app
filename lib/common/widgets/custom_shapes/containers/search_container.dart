@@ -6,18 +6,26 @@ import 'package:r_shop_app/utils/device/device_utility.dart';
 import 'package:r_shop_app/utils/helpers/helper_functions.dart';
 
 class RSearchContainer extends StatelessWidget {
-  const RSearchContainer({super.key, required this.text, this.icon = Iconsax.search_normal, this.showBackground = true, this.showBorder = true});
+  const RSearchContainer({
+    super.key,
+    required this.text,
+    this.icon = Iconsax.search_normal,
+    this.showBackground = true,
+    this.showBorder = true,
+    this.padding = const EdgeInsets.symmetric(horizontal: RSizes.defaultSpace),
+  });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
     final dark = RHelperFunctions.isDarkMode(context);
 
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: RSizes.defaultSpace),
+      padding: padding,
       child: Container(
         width: RDeviceUtils.getScreenWidth(),
         padding: EdgeInsets.all(RSizes.md),

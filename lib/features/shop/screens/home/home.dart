@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:r_shop_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:r_shop_app/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:r_shop_app/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:r_shop_app/features/shop/screens/home/widgets/promo_slider.dart';
@@ -6,6 +7,7 @@ import 'package:r_shop_app/utils/constants/image_strings.dart';
 
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
+import '../../../../common/widgets/layout/grid_layout.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/sizes.dart';
 
@@ -50,7 +52,20 @@ class HomePage extends StatelessWidget {
             /// -- Body
             Padding(
               padding: const EdgeInsets.all(RSizes.defaultSpace),
-              child: RPromoSlider(banners: [RAppImages.promoBanner_1, RAppImages.promoBanner_2, RAppImages.promoBanner_3]),
+              child: Column(
+                children: [
+                  /// -- Promo Slider
+                  const RPromoSlider(banners: [RAppImages.promoBanner_1, RAppImages.promoBanner_2, RAppImages.promoBanner_3]),
+                  const SizedBox(height: RSizes.spaceBtwItems),
+
+                  /// --Heading
+                  RSectionHeading(title: 'Popular products', onPressed: () {}),
+                  const SizedBox(height: RSizes.spaceBtwItems),
+
+                  /// -- Popular Products
+                  RGridLayout(itemCount: 24, itemBuilder: (_, index) => const RProductCardVertical()),
+                ],
+              ),
             ),
           ],
         ),
