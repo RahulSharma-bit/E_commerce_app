@@ -38,4 +38,16 @@ class RAppImages {
   static const String promoBanner_1 = "assets/images/banners/banner_1.jpg";
   static const String promoBanner_2 = "assets/images/banners/banner_2.jpg";
   static const String promoBanner_3 = "assets/images/banners/banner_3.jpg";
+
+  /// =================== Product Images =======================================
+  static const String productImage1 = "assets/images/products/ashirvaad_atta.png";
+  static const String productImage2 = "assets/images/products/bingo.png";
+  static const String productImage3 = "assets/images/products/colgate_max_fresh.png";
+  static const String productImage4 = "assets/images/products/head_and_shoulder.png";
+  static const String productImage5 = "assets/images/products/maggie.png";
+  static const String productImage6 = "assets/images/products/maggie.png";
+  static const String productImage7 = "assets/images/products/pampers.png";
+  static const String productImage8 = "assets/images/products/pantene_shampoo.png";
+  static const String productImage9 = "assets/images/products/parle_2020.png";
+  static const String productImage10 = "assets/images/products/pngwing.com_fortune_rice_bran.png";
 }
