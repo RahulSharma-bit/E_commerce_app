@@ -31,6 +31,7 @@ class RProductCardVertical extends StatelessWidget {
         ),
 
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             /// -- Thumbnail , Wishlist Button, Discount Tag
             RRoundedContainer(
@@ -70,9 +71,9 @@ class RProductCardVertical extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  RProductTitleText(title: 'Colgate Max Fresh', smallSize: true),
+                  RProductTitleText(title: 'Colgate Max Fresh', smallSize: true, textAlign: TextAlign.start),
                   const SizedBox(height: RSizes.xs),
-                  RBrandTitleWithVerifiedIcon(title: 'Colgate'),
+                  RBrandTitleWithVerifiedIcon(title: 'Colgate', textAlign: TextAlign.start),
                 ],
               ),
             ),

@@ -13,7 +13,7 @@ class RBrandTitleWithVerifiedIcon extends StatelessWidget {
     this.maxLines = 1,
     this.textColor,
     this.iconColor = RColors.primary,
-    this.textAlign = TextAlign.center,
+    this.textAlign = TextAlign.left,
     this.brandTextSize = TextSizes.small,
   });
 
@@ -31,6 +31,7 @@ class RBrandTitleWithVerifiedIcon extends StatelessWidget {
         Flexible(
           child: RBrandTitleText(title: title, color: textColor, maxLines: maxLines, textAlign: textAlign, brandTextSize: brandTextSize),
         ),
+
         const SizedBox(height: RSizes.xs),
         Icon(Iconsax.verify5, size: RSizes.iconXs, color: RColors.primary),
       ],
