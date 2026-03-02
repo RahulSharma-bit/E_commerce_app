@@ -5,20 +5,11 @@ import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 
 class RCircularIcon extends StatelessWidget {
-  const RCircularIcon({
-    super.key,
-    this.width,
-    this.height,
-    this.size = RSizes.lg,
-    required this.icon,
-    required this.color,
-    this.backgroundColor,
-    this.onPressed,
-  });
+  const RCircularIcon({super.key, this.width, this.height, this.size = RSizes.lg, required this.icon, this.color, this.backgroundColor, this.onPressed});
 
   final double? width, height, size;
   final IconData icon;
-  final Color color;
+  final Color? color;
   final Color? backgroundColor;
   final VoidCallback? onPressed;
 

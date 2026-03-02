@@ -5,14 +5,7 @@ import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
 class RVerticalImageText extends StatelessWidget {
-  const RVerticalImageText({
-    super.key,
-    required this.image,
-    required this.title,
-    this.textColor = Colors.white,
-    this.backgroundColor = Colors.white,
-    this.onTap,
-  });
+  const RVerticalImageText({super.key, required this.image, required this.title, this.textColor = Colors.white, this.backgroundColor, this.onTap});
 
   final String image, title;
   final Color textColor;
