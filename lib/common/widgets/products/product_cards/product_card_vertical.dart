@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:r_shop_app/common/styles/shadows.dart';
 import 'package:r_shop_app/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:r_shop_app/features/shop/screens/product_details/product_detail.dart';
 import 'package:r_shop_app/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/colors.dart';
@@ -20,7 +22,7 @@ class RProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = RHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(ProductDetail()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
