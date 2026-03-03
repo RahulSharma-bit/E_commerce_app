@@ -33,7 +33,7 @@ class StoreScreen extends StatelessWidget {
                 automaticallyImplyLeading: false,
                 floating: true,
                 pinned: true,
-                backgroundColor: RHelperFunctions.isDarkMode(context) ? RColors.dark : RColors.white,
+                backgroundColor: dark ? RColors.dark : RColors.white,
                 expandedHeight: 440,
 
                 //-- Flexible space in order to create child of this Sliver app Bar

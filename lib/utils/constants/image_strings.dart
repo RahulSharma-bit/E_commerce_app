@@ -50,4 +50,7 @@ class RAppImages {
   static const String productImage8 = "assets/images/products/pantene_shampoo.png";
   static const String productImage9 = "assets/images/products/parle_2020.png";
   static const String productImage10 = "assets/images/products/pngwing.com_fortune_rice_bran.png";
+
+  /// ======================== User Images =====================================
+  static const String user = "assets/images/users/user.png";
 }

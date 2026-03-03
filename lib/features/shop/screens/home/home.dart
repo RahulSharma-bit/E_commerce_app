@@ -45,6 +45,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(height: RSizes.defaultSpace),
                 ],
               ),
             ),

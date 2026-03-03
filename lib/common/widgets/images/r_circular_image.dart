@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
-import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
@@ -38,7 +37,7 @@ class RCircularImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: Center(
-        child: Image(fit: fit, image: isNetworkImage ? NetworkImage(image) : AssetImage(RAppImages.babyCare) as ImageProvider, color: overlayColor),
+        child: Image(fit: fit, image: isNetworkImage ? NetworkImage(image) : AssetImage(image) as ImageProvider, color: overlayColor),
       ),
     );
   }
